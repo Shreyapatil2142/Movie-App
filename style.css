@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
@@ -16,7 +20,24 @@ body {
 }
 
 header {
-  padding: 1rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  position: sticky;
+  transition: 1.5s;
+}
+
+.logo img{
+	width: 120px;
+	cursor: pointer;
+	transition: all 1s;
+	height: 40px;
+  justify-content: flex-start;
+  display: flex;
+  margin-top: 1rem ;
+}
+
+form {
+  padding: 1rem 1rem 1rem 50rem;
   display: flex;
   justify-content: flex-end;
   background-color: var(--secondary-color);
